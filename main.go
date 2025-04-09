@@ -25,7 +25,7 @@ func main() {
 	// Route: /health
 	mux.HandleFunc("/health", func(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusOK)
-		fmt.Fprintln(w, "OK")
+		fmt.Fprintln(w, "OK BOSS")
 	})
 
 	server := &http.Server{
