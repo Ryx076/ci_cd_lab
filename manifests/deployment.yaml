@@ -14,8 +14,6 @@ spec:
       labels:
         app: go-simple-webserver
     spec:
-      imagePullSecrets:
-        - name: github-credentials
       containers:
         - name: webserver
           image: ghcr.io/ryx076/ci_cd_lab:latest
